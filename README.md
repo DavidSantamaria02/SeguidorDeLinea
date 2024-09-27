@@ -73,7 +73,7 @@ Se puede observar el funcionamiento lógico interno: cuando se activa el `DL`, l
 
 D0  
 
-```math
+math
 D0 = Q0 * Q2 + 0 * Q1 + Q0 * Q3 + Q0 * Q1 * Q2 * Q3
 
 
