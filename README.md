@@ -1,4 +1,5 @@
 # Seguidor de Linea
+![DIG_D_FF_1bit](https://github.com/user-attachments/assets/1e5b12f6-0bf6-4629-9852-088ec18c82d3)
 
 # Introducción
 
