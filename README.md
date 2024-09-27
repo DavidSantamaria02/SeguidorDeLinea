@@ -238,6 +238,40 @@ Para duty 30%:
 
 PWM = ~(a0*a2+a0*a1)
 
+
+
+| Numero A | a0 | a1 | a2 | a3 | Numero B (DUTY) | B0 | B1 | B2 | B3 | A0 < B0 | A1 < B1 | A2 < B2 | A3 < B3 | A < B | PMW30 |
+|----------|----|----|----|----|-----------------|----|----|----|----|---------|---------|---------|---------|-------|-------|
+
+| **Fila 1**  | 0  | 0  | 0  | 0  | **Fila 1**     | 1  | 0  | 1  | 1  |         |         |         |         | 1     | 70%   |
+| **Fila 2**  | 0  | 0  | 0  | 1  | **Fila 2**     | 1  | 0  | 1  | 1  |         |         |         |         | 1     |       |
+| **Fila 3**  | 0  | 0  | 1  | 0  | **Fila 3**     | 1  | 0  | 1  | 1  |         |         |         |         | 1     |       |
+| **Fila 4**  | 0  | 0  | 1  | 1  | **Fila 4**     | 1  | 0  | 1  | 1  |         |         |         |         | 1     |       |
+| **Fila 5**  | 0  | 1  | 0  | 0  | **Fila 5**     | 1  | 0  | 1  | 1  |         |         |         |         | 1     |       |
+| **Fila 6**  | 0  | 1  | 0  | 1  | **Fila 6**     | 1  | 0  | 1  | 1  |         |         |         |         | 1     |       |
+| **Fila 7**  | 0  | 1  | 1  | 0  | **Fila 7**     | 1  | 0  | 1  | 1  |         |         |         |         | 1     |       |
+| **Fila 8**  | 0  | 1  | 1  | 1  | **Fila 8**     | 1  | 0  | 1  | 1  |         |         |         |         | 1     |       |
+| **Fila 9**  | 1  | 0  | 0  | 0  | **Fila 9**     | 1  | 0  | 1  | 1  |         |         |         |         | 1     |       |
+| **Fila 10** | 1  | 0  | 0  | 1  | **Fila 10**    | 1  | 0  | 1  | 1  |         |         |         |         | 1     |       |
+| **Fila 11** | 1  | 0  | 1  | 0  | **Fila 11**    | 1  | 0  | 1  | 1  |         |         |         |         | 1     |       |
+| **Fila 12** | 1  | 0  | 1  | 1  | **Fila 12**    | 1  | 0  | 1  | 1  |         |         |         |         | 1     |       |
+| **Fila 13** | 1  | 1  | 0  | 0  | **Fila 13**    | 1  | 0  | 1  | 1  |         |         |         |         | 1     |       |
+| **Fila 14** | 1  | 1  | 0  | 1  | **Fila 14**    | 1  | 0  | 1  | 1  |         |         |         |         | 1     |       |
+| **Fila 15** | 1  | 1  | 1  | 0  | **Fila 15**    | 1  | 0  | 1  | 1  |         |         |         |         | 1     |       |
+| **Fila 16** | 1  | 1  | 1  | 1  | **Fila 16**    | 1  | 0  | 1  | 1  |         |         |         |         | 1     |       |
+
+Para duty 30%:
+
+| q0 q1 |       (0-0) |       (0-1) |       (1-1) |       (1-0) |
+|-------|-------------|-------------|-------------|-------------|
+| 0-0   | 1           |   1         | 1           | 1           |
+| 0-1   | 1           |  1          | 1           | 1           |
+| 1-1   |             |             |             |             |
+| 1-0   | 1           | 1           |             |   1         |
+
+PWM = ~(a0*a2+a0*a1)
+
+
 #Conclusiones
 
 1. El uso de la FPGA permite un control más preciso y rápido de los motores, gestionando de forma eficiente la respuesta a los datos obtenidos por los sensores infrarrojos. Esto resulta en una mejor capacidad de seguimiento de la línea, con menos oscilaciones y una mayor estabilidad en la trayectoria del robot.
