@@ -33,6 +33,11 @@ Se puede observar el funcionamiento lógico interno: cuando se activa el `DL`, l
 
 | estado anterior |    | estado nuevo / flip-flops   |
 |-----------------|----|----------------------------|
+
+
+
+
+
 | q0 | q1 | q2 | q3 |    | q0+ / D0 | q1+ / D1 | q2+ / D2 | q3+ / D3 |
 |----|----|----|----|----|---------|---------|---------|---------|
 | 0  | 0  | 0  | 0  |    |   0     |   0     |   0     |   1     |
@@ -51,3 +56,9 @@ Se puede observar el funcionamiento lógico interno: cuando se activa el `DL`, l
 | 1  | 1  | 0  | 1  |    |   1     |   0     |   1     |   0     |
 | 1  | 1  | 1  | 0  |    |   0     |   1     |   1     |   0     |
 | 1  | 1  | 1  | 1  |    |   1     |   1     |   1     |   0     |
+
+
+
+
+
+
