@@ -1,3 +1,35 @@
+## Seguidor de Linea
+
+## Introducción
+
+En este proyecto se desarrolla un carro capaz de seguir una línea colocada en el suelo, se propone que este funcionamiento se de a partir de dos sensores infrarrojos, los cuales detectan la línea y posteriormente corrigen el rumbo del vehículo, añadido a esto, se plantea el uso de una fotoresistencia, la cuál al ser tapada invierte el sentido en el que se conduce el carro.
+
+IMAGEN DEL CARRO
+
+## Materiales
+
+Para la realización del seguidor de línea se utilizaron diferente módulos y otros elementos que permiten el funcionamiento del vehículo.
+
+# Tarjeta de Desarrollo BlackIce
+
+El diseño se hizo a partir de la tarjeta de desarrollo BlackIce que cuenta con la FPGA ICE40HX4K.
+
+IMAGEN DE LA TARJETA
+
+# Módulo L298N
+
+El L298N es un módulo controlador de motores que permite controlar el movimiento de motores eléctricos de corriente continua (DC) o motores paso a paso. Funciona como un puente H dual, lo que significa que puede controlar dos motores de manera independiente, permitiendo que giren tanto hacia adelante como hacia atrás.
+
+![image](https://github.com/user-attachments/assets/e0d84b45-2e77-4aed-8f20-39a9b1770606)
+
+
+# Sensores de Infrarrojo
+
+Un sensor infrarrojo (IR) es un dispositivo que detecta la radiación infrarroja emitida por objetos o superficies. Estos sensores funcionan capturando la luz en la parte infrarroja del espectro electromagnético, que no es visible para el ojo humano, pero que todos los objetos emiten como radiación de calor.
+
+Estos sensores se utilizaron para detectar la línea entre ellos y así mantener el curso del carro sobre esta.
+
+
 
 ## Testbench
 
