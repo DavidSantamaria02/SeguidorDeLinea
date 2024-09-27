@@ -29,6 +29,19 @@ Un sensor infrarrojo (IR) es un dispositivo que detecta la radiación infrarroja
 
 Estos sensores se utilizaron para detectar la línea entre ellos y así mantener el curso del carro sobre esta.
 
+![image](https://github.com/user-attachments/assets/ce3f1db3-5f10-4fc1-ba6d-90ddadca1249)
+
+# Sensor de Fotoresistencia
+
+Un sensor de fotoresistencia, también conocido como LDR (Light Dependent Resistor) o resistor dependiente de la luz, es un componente electrónico cuya resistencia varía en función de la cantidad de luz que recibe. A medida que aumenta la luz, la resistencia del sensor disminuye, y cuando la luz disminuye, la resistencia aumenta.
+
+![image](https://github.com/user-attachments/assets/3f42e251-b678-4bf1-9a8f-d2820c976b83)
+
+# Motores DC
+
+Para las llantas del carro se utilizaron motores DC los cuales son compatibles con el módulo L298N.
+
+![image](https://github.com/user-attachments/assets/f739cca5-b28f-450c-8637-e712c6d8d4c7)
 
 
 ## Testbench
