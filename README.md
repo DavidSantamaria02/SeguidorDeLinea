@@ -1,5 +1,4 @@
-Hola
-![image](https://github.com/user-attachments/assets/b2a12210-5991-494e-a641-113591452229)
+
 ## Testbench
 
 Para el testbench, se utilizaron como parámetros las variables `DL`, `DI` y `DD`, que corresponden a las entradas del sensor de luz y a los sensores de seguimiento de línea ubicados a la izquierda y a la derecha. Decidimos probar todas las 8 combinaciones posibles de señales:
