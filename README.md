@@ -1,6 +1,8 @@
 # Seguidor de Linea
 ![DIG_D_FF_1bit](https://github.com/user-attachments/assets/1e5b12f6-0bf6-4629-9852-088ec18c82d3)
 
+![CompUnsigned](https://github.com/user-attachments/assets/27420eff-1be2-4268-bdc1-1d5f9cf7df4c)
+
 # Introducción
 
 En este proyecto se desarrolla un carro capaz de seguir una línea colocada en el suelo, se propone que este funcionamiento se de a partir de dos sensores infrarrojos, los cuales detectan la línea y posteriormente corrigen el rumbo del vehículo, añadido a esto, se plantea el uso de una fotoresistencia, la cuál al ser tapada invierte el sentido en el que se conduce el carro.
