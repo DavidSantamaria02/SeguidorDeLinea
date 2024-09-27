@@ -9,6 +9,7 @@
 
 En este proyecto se desarrolla un carro capaz de seguir una línea colocada en el suelo, se propone que este funcionamiento se de a partir de dos sensores infrarrojos, los cuales detectan la línea y posteriormente corrigen el rumbo del vehículo, añadido a esto, se plantea el uso de una fotoresistencia, la cuál al ser tapada invierte el sentido en el que se conduce el carro.
 
+![image](https://github.com/user-attachments/assets/28c70f60-ad09-4500-95e1-23b4ce89d42f)
 
 
 
