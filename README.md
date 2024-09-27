@@ -22,6 +22,7 @@ Las salidas generadas son dos PWM, uno para cada motor, junto con cuatro señale
 
 Los resultados se presentan a continuación:
 
-**IMAGEN**
+![image](https://github.com/user-attachments/assets/b3caf328-0dea-43d9-a2d5-d476a053f90d)
+
 
 Se puede observar el funcionamiento lógico interno: cuando se activa el `DL`, los motores giran en reversa; por defecto, los motores avanzan. Al activar el `DI`, el motor izquierdo se apaga, mientras que al activar el `DD`, el motor derecho se apaga. Además, se puede notar que los PWM estuvieron activos durante 16 de los 24 ciclos.
