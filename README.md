@@ -1,6 +1,6 @@
 ![top](https://github.com/user-attachments/assets/4803faf4-6ec4-41db-82f6-d686d2cfbc01)
 
-
+![divFreq](https://github.com/user-attachments/assets/56a8f01d-add8-4178-ac94-06d316995b8f)
 
 # Seguidor de Linea
 ![DIG_D_FF_1bit](https://github.com/user-attachments/assets/1e5b12f6-0bf6-4629-9852-088ec18c82d3)
