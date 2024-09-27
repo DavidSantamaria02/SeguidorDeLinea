@@ -276,16 +276,16 @@ PWM = ~(a0*a2+a0*a1)
 
 TABLA DE VERDAD PARA EL FUNCIONAMIENTO DE LOS MOTORES
 
-| Sensor luz | a  | b   | c  | Motor 1 | Motor 2 | Dirección Motor 1 | Dirección Motor 2 | LED 1 (adelante) | LED 2 (atrás) | LED 3 (adelante) | LED 4 (atrás) |
+| Sensor luz | a  | b   | c  | MotorI1 | MotorD2 |                   |                   | LED 1 (adelante) | LED 2 (atrás) | LED 3 (adelante) | LED 4 (atrás) |
 |------------|----|-----|----|---------|---------|-------------------|-------------------|------------------|---------------|------------------|---------------|
-| 0          | 0  | 0   | 0  | 1       | 1       | adelante           | adelante           | 1                | 0             | 1                | 0             |
-| 0          | 0  | 1   | 1  | 1       | 1       | adelante           | adelante           | 1                | 0             | 1                | 0             |
-| 0          | 1  | 0   | 1  | 0       | 1       | atrás              | adelante           | 0                | 0             | 1                | 0             |
-| 0          | 1  | 1   | 0  | 0       | 1       | atrás              | adelante           | 0                | 0             | 1                | 0             |
-| 1          | 0  | 0   | 1  | 0       | 1       | atrás              | adelante           | 0                | 1             | 0                | 0             |
-| 1          | 0  | 1   | 0  | 0       | 1       | atrás              | atrás              | 0                | 1             | 0                | 0             |
-| 1          | 1  | 0   | 0  | 1       | 0       | adelante           | detenerse          | 0                | 0             | 0                | 0             |
-| 1          | 1  | 1   | 0  | 0       | 0       | detenerse          | detenerse          | 0                | 0             | 0                | 0             |
+| 0          | 0  | 0   | 0  | 1       | 1       |                    |                    | 1                | 0             | 1                | 0             |
+| 0          | 0  | 0   | 1  | 1       | 0       |                    |        e           | 1                | 0             | 0                | 0             |
+| 0          | 0  | 1   | 0  | 0       | 1       |                    |                    | 0                | 0             | 1                | 0             |
+| 0          | 0  | 1   | 1  | 0       | 0       |                    | detenerse          | 0                | 0             | 0                | 0             |
+| 1          | 1  | 0   | 0  | 1       | 1       |                    | atrás              | 0                | 1             | 0                | 1             |
+| 1          | 1  | 0   | 1  | 1       | 0       |                    | atrás              | 0                | 1             | 0                | 0             |
+| 1          | 1  | 1   | 0  | 0       | 1       |                    | atrás              | 0                | 0             | 0                | 1             |
+| 1          | 1  | 1   | 1  | 0       | 0       |                    | detenerse          | 0                | 0             | 0                | 0             |
 
 
 
