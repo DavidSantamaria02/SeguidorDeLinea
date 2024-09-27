@@ -26,3 +26,28 @@ Los resultados se presentan a continuación:
 
 
 Se puede observar el funcionamiento lógico interno: cuando se activa el `DL`, los motores giran en reversa; por defecto, los motores avanzan. Al activar el `DI`, el motor izquierdo se apaga, mientras que al activar el `DD`, el motor derecho se apaga. Además, se puede notar que los PWM estuvieron activos durante 16 de los 24 ciclos.
+
+
+
+# Contador de 4 bits FF tipo D
+
+| estado anterior |    | estado nuevo / flip-flops   |
+|-----------------|----|----------------------------|
+| q0 | q1 | q2 | q3 |    | q0+ / D0 | q1+ / D1 | q2+ / D2 | q3+ / D3 |
+|----|----|----|----|----|---------|---------|---------|---------|
+| 0  | 0  | 0  | 0  |    |   0     |   0     |   0     |   1     |
+| 0  | 0  | 0  | 1  |    |   1     |   0     |   0     |   0     |
+| 0  | 0  | 1  | 0  |    |   0     |   1     |   0     |   0     |
+| 0  | 0  | 1  | 1  |    |   1     |   1     |   0     |   0     |
+| 0  | 1  | 0  | 0  |    |   0     |   0     |   1     |   0     |
+| 0  | 1  | 0  | 1  |    |   1     |   0     |   1     |   0     |
+| 0  | 1  | 1  | 0  |    |   0     |   1     |   1     |   0     |
+| 0  | 1  | 1  | 1  |    |   1     |   1     |   1     |   0     |
+| 1  | 0  | 0  | 0  |    |   0     |   0     |   0     |   1     |
+| 1  | 0  | 0  | 1  |    |   1     |   0     |   0     |   0     |
+| 1  | 0  | 1  | 0  |    |   0     |   1     |   0     |   0     |
+| 1  | 0  | 1  | 1  |    |   1     |   1     |   0     |   0     |
+| 1  | 1  | 0  | 0  |    |   0     |   0     |   1     |   0     |
+| 1  | 1  | 0  | 1  |    |   1     |   0     |   1     |   0     |
+| 1  | 1  | 1  | 0  |    |   0     |   1     |   1     |   0     |
+| 1  | 1  | 1  | 1  |    |   1     |   1     |   1     |   0     |
