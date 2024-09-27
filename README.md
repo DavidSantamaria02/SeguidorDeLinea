@@ -51,7 +51,9 @@ Para las llantas del carro se utilizaron motores DC los cuales son compatibles c
 ![image](https://github.com/user-attachments/assets/f739cca5-b28f-450c-8637-e712c6d8d4c7)
 
 
+# Diseño
 
+![Start](https://github.com/user-attachments/assets/ff9b4ad5-76c6-4847-8069-e7edb7c43c44)
 
 
 
