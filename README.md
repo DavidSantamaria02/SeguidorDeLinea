@@ -260,7 +260,7 @@ PWM = ~(a0*a2+a0*a1)
 | **Fila 15** | 1  | 1  | 1  | 0  | **Fila 15**    | 1  | 0  | 1  | 1  |         |         |         |         | 1     |       |
 | **Fila 16** | 1  | 1  | 1  | 1  | **Fila 16**    | 1  | 0  | 1  | 1  |         |         |         |         | 1     |       |
 
-Para duty 30%:
+Para duty 70%:
 
 | q0 q1 |       (0-0) |       (0-1) |       (1-1) |       (1-0) |
 |-------|-------------|-------------|-------------|-------------|
@@ -270,6 +270,23 @@ Para duty 30%:
 | 1-0   | 1           | 1           |             |   1         |
 
 PWM = ~(a0*a2+a0*a1)
+
+
+
+
+TABLA DE VERDAD PARA EL FUNCIONAMIENTO DE LOS MOTORES
+
+| Sensor luz | a  | b   | c  | Motor 1 | Motor 2 | Dirección Motor 1 | Dirección Motor 2 | LED 1 (adelante) | LED 2 (atrás) | LED 3 (adelante) | LED 4 (atrás) |
+|------------|----|-----|----|---------|---------|-------------------|-------------------|------------------|---------------|------------------|---------------|
+| 0          | 0  | 0   | 0  | 1       | 1       | adelante           | adelante           | 1                | 0             | 1                | 0             |
+| 0          | 0  | 1   | 1  | 1       | 1       | adelante           | adelante           | 1                | 0             | 1                | 0             |
+| 0          | 1  | 0   | 1  | 0       | 1       | atrás              | adelante           | 0                | 0             | 1                | 0             |
+| 0          | 1  | 1   | 0  | 0       | 1       | atrás              | adelante           | 0                | 0             | 1                | 0             |
+| 1          | 0  | 0   | 1  | 0       | 1       | atrás              | adelante           | 0                | 1             | 0                | 0             |
+| 1          | 0  | 1   | 0  | 0       | 1       | atrás              | atrás              | 0                | 1             | 0                | 0             |
+| 1          | 1  | 0   | 0  | 1       | 0       | adelante           | detenerse          | 0                | 0             | 0                | 0             |
+| 1          | 1  | 1   | 0  | 0       | 0       | detenerse          | detenerse          | 0                | 0             | 0                | 0             |
+
 
 
 #Conclusiones
