@@ -3,9 +3,9 @@
 ![divFreq](https://github.com/user-attachments/assets/56a8f01d-add8-4178-ac94-06d316995b8f)
 
 # Seguidor de Linea
-![DIG_D_FF_1bit](https://github.com/user-attachments/assets/1e5b12f6-0bf6-4629-9852-088ec18c82d3)
 
-![CompUnsigned](https://github.com/user-attachments/assets/27420eff-1be2-4268-bdc1-1d5f9cf7df4c)
+
+
 
 # Introducción
 
@@ -51,7 +51,11 @@ Para las llantas del carro se utilizaron motores DC los cuales son compatibles c
 ![image](https://github.com/user-attachments/assets/f739cca5-b28f-450c-8637-e712c6d8d4c7)
 
 
-## Testbench
+
+
+
+
+# Testbench
 
 Para el testbench, se utilizaron como parámetros las variables `DL`, `DI` y `DD`, que corresponden a las entradas del sensor de luz y a los sensores de seguimiento de línea ubicados a la izquierda y a la derecha. Decidimos probar todas las 8 combinaciones posibles de señales:
 
@@ -82,6 +86,9 @@ Se puede observar el funcionamiento lógico interno: cuando se activa el `DL`, l
 
 
 # Contador de 4 bits FF tipo D
+
+![DIG_D_FF_1bit](https://github.com/user-attachments/assets/1e5b12f6-0bf6-4629-9852-088ec18c82d3)
+
 
 | estado anterior |    | estado nuevo / flip-flops   |
 |-----------------|----|----------------------------|
@@ -193,6 +200,8 @@ D2 =Q2∗Q3+Q2∗Q3
 
 ## Comparación de valores
 
+![CompUnsigned](https://github.com/user-attachments/assets/27420eff-1be2-4268-bdc1-1d5f9cf7df4c)
+
 | Numero A | a0 | a1 | a2 | a3 | Numero B (DUTY) | B0 | B1 | B2 | B3 | A0 < B0 | A1 < B1 | A2 < B2 | A3 < B3 | A < B | PMW30 |
 |----------|----|----|----|----|-----------------|----|----|----|----|---------|---------|---------|---------|-------|-------|
 | **Fila 1**  | 0  | 0  | 0  | 0  | **Fila 1**     | 0  | 0  | 1  | 1  | 0       | 1       | 0       | 1       | 1     | 30%   |
@@ -213,4 +222,13 @@ D2 =Q2∗Q3+Q2∗Q3
 | **Fila 16** | 1  | 1  | 1  | 1  | **Fila 16**    | 0  | 0  | 1  | 1  | 0       | 1       | 0       | 1       | 1     |       |
 
 
+
+#Conclusiones
+
+1. El uso de la FPGA permite un control más preciso y rápido de los motores, gestionando de forma eficiente la respuesta a los datos obtenidos por los sensores infrarrojos. Esto resulta en una mejor capacidad de seguimiento de la línea, con menos oscilaciones y una mayor estabilidad en la trayectoria del robot.
+2. Utilizar una FPGA en el proyecto no solo permite una implementación eficiente del algoritmo de control, sino que también ofrece la flexibilidad para modificar y escalar el diseño en el futuro. Se pueden añadir más sensores o implementar algoritmos más complejos sin necesidad de un rediseño completo del hardware, facilitando futuras mejoras o adaptaciones del sistema.
+3. Es de suma importancia la planeación adecuada del trabajo incluso antes de empezar a programarlo, esta anticipación puede ayudar a reducir en gran medida el tiempo de realización de cualquier proyecto.
+
+
+   
 
